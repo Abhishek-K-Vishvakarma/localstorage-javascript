@@ -1,0 +1,13 @@
+window.localStorage.setItem('theme', 'dark');
+console.log(window.localStorage.length);
+console.log(localStorage.getItem('theme'));
+console.log(localStorage.removeItem('theme'));
+localStorage.setItem('theme', 'light');
+localStorage.setItem('backgroundColor', 'dark');
+localStorage.setItem('color', '#212121');
+console.log(localStorage.getItem('theme'));
+console.log(localStorage.getItem('backgroundColor'));
+console.log(localStorage.getItem('color'));
+alert(localStorage.getItem('theme'));
+alert(localStorage.getItem('backgroundColor'));
+alert(localStorage.getItem('color'));
