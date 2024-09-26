@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+label{
+  color: white;
+  font-size: 20px;
+}
+th{
+  color: white;
+}
+#tbd{
+  color: white;
+}
+.container{
+  backdrop-filter: blur(20px);
+}
+  </style>
+  <title>Employee Management</title>
+</head>
+<body background="https://img.freepik.com/free-photo/beautiful-japanese-forest-scene_23-2151498135.jpg">
+  <div class="img">
+    <div class="container mt-5">
+      <h2 class="text-center" style="text-shadow: 3px 3px 5px blue; color: red; font-size: 40px;">Employee Management
+        System</h2>
+      <div class="form-group mb-3">
+        <label for="emid">Employee ID:</label>
+        <input type="text" id="emid" class="form-control" placeholder="Enter Employee ID">
+        <span id="err" class="form-text text-danger"></span>
+      </div>
+      <div class="form-group mb-3">
+        <label for="emname">Employee Name:</label>
+        <input type="text" id="emname" class="form-control" placeholder="Enter Employee Name">
+        <span id="err1" class="form-text text-danger"></span>
+      </div>
+      <div class="form-group mb-3">
+        <label for="emmail">Employee Email:</label>
+        <input type="text" id="email" class="form-control" placeholder="Enter Employee Email">
+        <span id="err2" class="form-text text-danger"></span>
+      </div>
+      <div class="form-group mb-3">
+        <label for="emsalary">Employee Salary:</label>
+        <input type="text" id="emsalary" class="form-control" placeholder="Enter Employee Salary">
+        <span id="err3" class="form-text text-danger"></span>
+      </div>
+      <button id="btn1" class="btn btn-primary">Add Employee</button>
+      <table class="table mt-4 table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Employee Email</th>
+            <th>Employee Salary</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tbd">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="projectLocalStorage.js"></script>
+</body>
+</html>
